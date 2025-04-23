@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ofertas | TecnoPlus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .productos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .producto {
+      border-radius: 8px;
+      background-color:
+      padding: 15px;
+      width: 100%;
+      max-width: 260px;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .producto h4 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .producto p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .precio-antiguo {
+      text-decoration: line-through;
+      color: #888;
+    }
+
+    .precio-nuevo {
+      color: #d60000;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .producto {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ofertas TecnoPlus</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="moviles.html">Moviles</a>
+      <a href="TVs.html">TVs</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="hogar.html">Hogar</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>¡Ofertas Especiales por Tiempo Limitado!</h2>
+    <div class="productos-grid">
+
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_09_21_40.jpg" alt="Tablet Económica">
+        <h4>Tablet Económica</h4>
+        <p>Ideal para lectura y redes sociales.</p>
+        <p><span class="precio-antiguo">$250</span> <span class="precio-nuevo">$199</span></p>
+      </div>
+
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_09_22_14.jpg" alt="Cámara Profesional">
+        <h4>Cámara Profesional</h4>
+        <p>Fotografía 4K con lente gran angular.</p>
+        <p><span class="precio-antiguo">$850</span> <span class="precio-nuevo">$699</span></p>
+      </div>
+
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_09_22_35.jpg" alt="Mouse Inalámbrico">
+        <h4>Mouse Inalámbrico</h4>
+        <p>Compacto, con batería recargable.</p>
+        <p><span class="precio-antiguo">$45</span> <span class="precio-nuevo">$29</span></p>
+      </div>
+
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_09_23_05.jpg" alt="PC de Escritorio">
+        <h4>PC de Escritorio</h4>
+        <p>8GB RAM, SSD 240GB, monitor incluido.</p>
+        <p><span class="precio-antiguo">$620</span> <span class="precio-nuevo">$499</span></p>
+      </div>
+
+   <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_11_05_28.jpg" alt="Cargador ">
+        <h4>Cargador tipo C</h4>
+        <p>Carga Rapida 35 Wts</p>
+        <p><span class="precio-antiguo">$70</span> <span class="precio-nuevo">$45</span></p>
+      </div>
+
+   <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_11_05_49.jpg" alt="Bateria">
+        <h4>Bateria Portatil</h4>
+        <p>10 mAh de energia, 3 puertos Usb, linterna integrada</p>
+        <p><span class="precio-antiguo">$50</span> <span class="precio-nuevo">$35</span></p>
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TecnoPlus. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productos | TecnoPlus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .productos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .producto {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 15px;
+      width: 100%;
+      max-width: 260px;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .producto h4 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .producto p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .producto {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda TecnoPlus</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="moviles.html">Moviles</a
+      <a href="TVs.html">TVs</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="hogar.html">Hogar</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+  
+  <h2>Sección: Hogar</h2>
+<div class="productos-grid">
+  <div class="producto">
+    <img src="imagenes/image_search_1745434192995.jpg" alt="Aspiradora Inteligente">
+    <h4>Aspiradora Inteligente</h4>
+    <p>Robot aspirador con sensores y mapeo.</p>
+    <p><strong>Precio:</strong> $230</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388139503.jpg" alt="Foco Inteligente">
+    <h4>Foco Inteligente Wi-Fi</h4>
+    <p>Control desde app, RGB, compatible con Alexa.</p>
+    <p><strong>Precio:</strong> $25</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388187459.jpg" alt="Cámara de Seguridad">
+    <h4>Cámara de Seguridad</h4>
+    <p>Visión nocturna, detección de movimiento.</p>
+    <p><strong>Precio:</strong> $75</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1745434242605.jpg" alt="Enchufe Inteligente">
+    <h4>Enchufe Inteligente</h4>
+    <p>Programable, control remoto por app.</p>
+    <p><strong>Precio:</strong> $18</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388245793.jpg" alt="Purificador de Aire">
+    <h4>Purificador de Aire</h4>
+    <p>Filtro HEPA, monitoreo de calidad del aire.</p>
+    <p><strong>Precio:</strong> $160</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388269382.jpg" alt="Cafetera Inteligente">
+    <h4>Cafetera Inteligente</h4>
+    <p>Programable, control por voz, 12 tazas.</p>
+    <p><strong>Precio:</strong> $110</p>
+  </div>
+</div>
+
+</main>
+
+  <footer>
+    <p>&copy; 2025 TecnoPlus. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productos | TecnoPlus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .productos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .producto {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 15px;
+      width: 100%;
+      max-width: 260px;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .producto h4 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .producto p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .producto {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda TecnoPlus</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="moviles.html">Moviles</a>
+      <a href="TVs.html">TVs</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="hogar.html">Hogar</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h2>Sección: Laptops</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_09_44_56.jpg" alt="Laptop Gamer">
+        <h4>Laptop Gamer</h4>
+        <p>Intel Core i7, RTX 3060, 16GB RAM.</p>
+        <p><strong>Precio:</strong> $1200</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_08_49_30.jpg" alt="Laptop Elegante">
+        <h4>Laptop Elegante</h4>
+        <p>Diseño liviano, ideal para oficina.</p>
+        <p><strong>Precio:</strong> $950</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386327568.jpg" alt="Laptop Versátil">
+        <h4>Laptop Versátil</h4>
+        <p>Convertible 2 en 1, pantalla táctil.</p>
+        <p><strong>Precio:</strong> $890</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386364811.jpg" alt="Laptop Estudiantil">
+        <h4>Laptop Estudiantil</h4>
+        <p>Rendimiento óptimo para clases virtuales.</p>
+        <p><strong>Precio:</strong> $620</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386391051.png" alt="Laptop para Diseño">
+        <h4>Laptop para Diseño</h4>
+        <p>Gráficos avanzados, ideal para creativos.</p>
+        <p><strong>Precio:</strong> $1350</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386437765.jpg" alt="Laptop Ejecutiva">
+        <h4>Laptop Ejecutiva</h4>
+        <p>Batería de larga duración, diseño delgado.</p>
+        <p><strong>Precio:</strong> $980</p>
+      </div>
+    </div>
+
+    <h2>Sección: Móviles</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_08_58_42.jpg" alt="Smartphone Pro">
+        <h4>Smartphone Pro</h4>
+        <p>Pantalla AMOLED, 128GB, 5G.</p>
+        <p><strong>Precio:</strong> $780</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386924360.jpg" alt="Smartphone Compacto">
+        <h4>Smartphone Compacto</h4>
+        <p>Diseño práctico, gran rendimiento.</p>
+        <p><strong>Precio:</strong> $420</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386945360.png" alt="Smartphone Max">
+        <h4>Smartphone Max</h4>
+        <p>6.8” pantalla, batería de larga duración.</p>
+        <p><strong>Precio:</strong> $650</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386975383.jpg" alt="Smartphone Lite">
+        <h4>Smartphone Lite</h4>
+        <p>Económico, ideal para uso básico.</p>
+        <p><strong>Precio:</strong> $280</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744387001294.jpg" alt="Smartphone Ultra">
+        <h4>Smartphone Ultra</h4>
+        <p>Cámara triple, 256GB, 120Hz.</p>
+        <p><strong>Precio:</strong> $990</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744387049356.jpg" alt="Smartphone Selfie">
+        <h4>Smartphone Selfie</h4>
+        <p>Cámara frontal 32MP, modo retrato.</p>
+        <p><strong>Precio:</strong> $480</p>
+      </div>
+    </div>
+
+    <h2>Sección: Accesorios</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_09_05_53.jpg" alt="Teclado Mecánico">
+        <h4>Teclado Mecánico</h4>
+        <p>RGB, switches rojos, diseño ergonómico.</p>
+        <p><strong>Precio:</strong> $85</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_09_35_30.jpg" alt="Audífonos Inalámbricos">
+        <h4>Audífonos Sony</h4>
+        <p>Cancelación de ruido, sonido Hi-Fi.</p>
+        <p><strong>Precio:</strong> $100</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744387511374.jpg" alt="Smartwatch">
+        <h4>Smartwatch</h4>
+        <p>Apps integradas, medidor de presión.</p>
+        <p><strong>Precio:</strong> $120</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744387563886.jpg" alt="Cargador Rápido">
+        <h4>Cargador Rápido</h4>
+        <p>USB-C, carga 50% en 30 minutos.</p>
+        <p><strong>Precio:</strong> $30</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744387563886.jpg" alt="Base para Laptop">
+        <h4>Base para Laptop</h4>
+        <p>Aluminio ajustable, mejora ventilación.</p>
+        <p><strong>Precio:</strong> $40</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744387588847.jpg" alt="Cámara Web HD">
+        <h4>Cámara Web HD</h4>
+        <p>1080p, micrófono integrado.</p>
+        <p><strong>Precio:</strong> $55</p>
+      </div>
+    </div>
+
+<h2>Sección: Hogar</h2>
+<div class="productos-grid">
+  <div class="producto">
+    <img src="imagenes/image_search_1745434192995.jpg" alt="Aspiradora Inteligente">
+    <h4>Aspiradora Inteligente</h4>
+    <p>Robot aspirador con sensores y mapeo.</p>
+    <p><strong>Precio:</strong> $230</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388139503.jpg" alt="Foco Inteligente">
+    <h4>Foco Inteligente Wi-Fi</h4>
+    <p>Control desde app, RGB, compatible con Alexa.</p>
+    <p><strong>Precio:</strong> $25</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388187459.jpg" alt="Cámara de Seguridad">
+    <h4>Cámara de Seguridad</h4>
+    <p>Visión nocturna, detección de movimiento.</p>
+    <p><strong>Precio:</strong> $75</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1745434242605.jpg" alt="Enchufe Inteligente">
+    <h4>Enchufe Inteligente</h4>
+    <p>Programable, control remoto por app.</p>
+    <p><strong>Precio:</strong> $18</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388245793.jpg" alt="Purificador de Aire">
+    <h4>Purificador de Aire</h4>
+    <p>Filtro HEPA, monitoreo de calidad del aire.</p>
+    <p><strong>Precio:</strong> $160</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388269382.jpg" alt="Cafetera Inteligente">
+    <h4>Cafetera Inteligente</h4>
+    <p>Programable, control por voz, 12 tazas.</p>
+    <p><strong>Precio:</strong> $110</p>
+  </div>
+</div>
+
+<h2>Sección: TVs</h2>
+<div class="productos-grid">
+  <div class="producto">
+    <img src="imagenes/image_search_1744388665595.jpg" alt="Smart TV 50 pulgadas">
+    <h4>Smart TV 50” UHD 4K</h4>
+    <p>Conexión WiFi, Netflix, YouTube, HDR10.</p>
+    <p><strong>Precio:</strong> $499</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388711553.jpg" alt="TV 32 pulgadas">
+    <h4>TV LED 32” HD</h4>
+    <p>Ideal para dormitorios, HDMI y USB.</p>
+    <p><strong>Precio:</strong> $189</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388753827.jpg" alt="Smart TV 65 pulgadas">
+    <h4>Smart TV 65” QLED</h4>
+    <p>Resolución 4K, Asistente por voz, Ultra slim.</p>
+    <p><strong>Precio:</strong> $899</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388797082.jpg" alt="TV 24 pulgadas">
+    <h4>TV 24” Compacta</h4>
+    <p>Perfecta para cocinas o escritorios.</p>
+    <p><strong>Precio:</strong> $120</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388824952.jpg" alt="Smart TV 43 pulgadas">
+    <h4>Smart TV 43” FHD</h4>
+    <p>Streaming, navegador web, control por voz.</p>
+    <p><strong>Precio:</strong> $379</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388976442.jpg" alt="TV Curva 55 pulgadas">
+    <h4>TV Curva 55” 4K</h4>
+    <p>Inmersiva, Dolby Audio, diseño elegante.</p>
+    <p><strong>Precio:</strong> $640</p>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TecnoPlus. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

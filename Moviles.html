@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productos | TecnoPlus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .productos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .producto {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 15px;
+      width: 100%;
+      max-width: 260px;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .producto h4 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .producto p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .producto {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda TecnoPlus</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="moviles.html">Moviles</a>
+      <a href="TVs.html">TVs</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="hogar.html">Hogar</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+<h2>Sección: Móviles</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="imagenes/ImageDownload_09-04-2025_08_58_42.jpg" alt="Smartphone Pro">
+        <h4>Smartphone Pro</h4>
+        <p>Pantalla AMOLED, 128GB, 5G.</p>
+        <p><strong>Precio:</strong> $780</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386924360.jpg" alt="Smartphone Compacto">
+        <h4>Smartphone Compacto</h4>
+        <p>Diseño práctico, gran rendimiento.</p>
+        <p><strong>Precio:</strong> $420</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386945360.png" alt="Smartphone Max">
+        <h4>Smartphone Max</h4>
+        <p>6.8” pantalla, batería de larga duración.</p>
+        <p><strong>Precio:</strong> $650</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744386975383.jpg" alt="Smartphone Lite">
+        <h4>Smartphone Lite</h4>
+        <p>Económico, ideal para uso básico.</p>
+        <p><strong>Precio:</strong> $280</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744387001294.jpg" alt="Smartphone Ultra">
+        <h4>Smartphone Ultra</h4>
+        <p>Cámara triple, 256GB, 120Hz.</p>
+        <p><strong>Precio:</strong> $990</p>
+      </div>
+      <div class="producto">
+        <img src="imagenes/image_search_1744387049356.jpg" alt="Smartphone Selfie">
+        <h4>Smartphone Selfie</h4>
+        <p>Cámara frontal 32MP, modo retrato.</p>
+        <p><strong>Precio:</strong> $480</p>
+      </div>
+    </div>
+    
+    </main>
+
+  <footer>
+    <p>&copy; 2025 TecnoPlus. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

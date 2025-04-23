@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productos | TecnoPlus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .productos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .producto {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 15px;
+      width: 100%;
+      max-width: 260px;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .producto h4 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .producto p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .producto {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda TecnoPlus</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="moviles.html">Moviles</a>
+      <a href="TVs.html">TVs</a>
+      <a href="accesorios.html">Accesorios</a>
+      <a href="hogar.html">Hogar</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+  
+  <h2>Sección: TVs</h2>
+<div class="productos-grid">
+  <div class="producto">
+    <img src="imagenes/image_search_1744388665595.jpg" alt="Smart TV 50 pulgadas">
+    <h4>Smart TV 50” UHD 4K</h4>
+    <p>Conexión WiFi, Netflix, YouTube, HDR10.</p>
+    <p><strong>Precio:</strong> $499</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388711553.jpg" alt="TV 32 pulgadas">
+    <h4>TV LED 32” HD</h4>
+    <p>Ideal para dormitorios, HDMI y USB.</p>
+    <p><strong>Precio:</strong> $189</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388753827.jpg" alt="Smart TV 65 pulgadas">
+    <h4>Smart TV 65” QLED</h4>
+    <p>Resolución 4K, Asistente por voz, Ultra slim.</p>
+    <p><strong>Precio:</strong> $899</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388797082.jpg" alt="TV 24 pulgadas">
+    <h4>TV 24” Compacta</h4>
+    <p>Perfecta para cocinas o escritorios.</p>
+    <p><strong>Precio:</strong> $120</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388824952.jpg" alt="Smart TV 43 pulgadas">
+    <h4>Smart TV 43” FHD</h4>
+    <p>Streaming, navegador web, control por voz.</p>
+    <p><strong>Precio:</strong> $379</p>
+  </div>
+  <div class="producto">
+    <img src="imagenes/image_search_1744388976442.jpg" alt="TV Curva 55 pulgadas">
+    <h4>TV Curva 55” 4K</h4>
+    <p>Inmersiva, Dolby Audio, diseño elegante.</p>
+    <p><strong>Precio:</strong> $640</p>
+  </div>
+</div>
+
+</main>
+
+  <footer>
+    <p>&copy; 2025 TecnoPlus. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
